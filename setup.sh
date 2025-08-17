@@ -38,14 +38,6 @@ npm -v # Deveria imprimir "10.9.2".
 
 fi
 
-#Instalação do Vim-plug
-if [ -f "$HOME/.vim/autoload/plug.vim" ]; then
-    echo "Vim-plug já está instalado."
-else
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
-
 #Clonagem dos meus dotfiles
 if [ -d "./dotfiles-public" ]; then
     echo "Os dotfiles já existem"
